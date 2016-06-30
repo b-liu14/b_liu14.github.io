@@ -21,9 +21,9 @@ module.exports = function(grunt) {
                        {
                            expand: true,
                            //相对路径
-                           cwd: 'src/css/',
+                           cwd: 'css/',
                            src: '*.css',
-                           dest: 'build/css/',
+                           dest: 'css/',
                            rename: function (dest, src) {
                                    var folder = src.substring(0, src.lastIndexOf('/'));
                                    var filename = src.substring(src.lastIndexOf('/'), src.length);
