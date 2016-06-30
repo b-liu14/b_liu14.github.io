@@ -14,6 +14,10 @@ body, html{
 	font-family: "微软雅黑","ms song","宋体","Arial","verdana","Helvetica", "sans-serif";
 }
 
+p{
+	text-indent:2em;
+}
+
 .div{
 	display: block;
 }
@@ -45,6 +49,7 @@ body, html{
 }
 
 .infromation{
+	margin-top: 10px;
 	padding-left: 10%;
 	padding-right: 10%;
 }
@@ -63,6 +68,7 @@ body, html{
 	width:100%;
 	height: 100%;
 	text-align: center;
+	border-radius:10%;
 }
 
 .content{
@@ -86,16 +92,27 @@ body, html{
 .subtitle{
 	font-weight: bold;
     line-height: 1.2em;
-    font-size: 25px;
+    font-size: 35px;
     font-family: "黑体","ms song","宋体","Arial","verdana","Helvetica", "sans-serif";
     margin-top: 15px;
     margin-bottom: 10px;
     text-align: left;
     background: url(images/title_cata.gif) 0 50% no-repeat;
     color: #AA7A53;
-    padding: 8px 0px 0px 32px;
+    /*padding: 4px 0px 0px 32px;*/
 }
 
 .nav_title{
     font-family: "黑体","ms song","宋体","Arial","verdana","Helvetica", "sans-serif";
+}
+
+.notetitle{
+	display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    word-break: break-all;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
 }
