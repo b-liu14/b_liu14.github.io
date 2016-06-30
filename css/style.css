@@ -3,9 +3,11 @@
     width: extend-to-zoom;
 }
 
-body, html{
+body{
+	max-width:1200px;
+	width:expression_r(document.body.clientWidth > 1200 ? "1200px": "auto" );
 	font-size: 100%;
-	margin: 0;
+	margin: 0 auto 0 auto;
 	padding: 0;
 	height: 100%;
 	width: 100%;
@@ -16,6 +18,10 @@ body, html{
 
 p{
 	text-indent:2em;
+}
+
+a{
+    text-decoration: none;
 }
 
 .div{
@@ -89,7 +95,6 @@ p{
 
 .notetitle:hover {
     color: #e50053;
-    text-decoration: none;
 }
 
 .copyright{
