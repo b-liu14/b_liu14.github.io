@@ -21,15 +21,15 @@ module.exports = function(grunt) {
                        {
                            expand: true,
                            //相对路径
-                           cwd: 'src/css/',
+                           cwd: 'css/',
                            src: '*.css',
-                           dest: 'build/css/',
+                           dest: 'css/',
                            rename: function (dest, src) {
                                    var folder = src.substring(0, src.lastIndexOf('/'));
                                    var filename = src.substring(src.lastIndexOf('/'), src.length);
                                    //  var filename=src;
                                    filename = filename.substring(0, filename.lastIndexOf('.'));
-                                   var fileresult=dest + folder + filename + '.min.css';
+                                   var fileresult=dest + folder + filename + '.css';
                                    grunt.log.writeln("现处理文件："+src+"  处理后文件："+fileresult);
 
                                    return fileresult;
