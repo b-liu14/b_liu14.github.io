@@ -54,14 +54,26 @@ module.exports = function(grunt) {
           dest: './'
       }]
       }
-    }
+    },
+
+    imagemin: {                          // Task
+      dynamic: {                         // Another target
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'image/',                   // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+          dest: 'image/'                  // Destination path prefix
+        }]
+      }
+  }
 
   });
 
   // 告诉grunt我们将使用插件
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   // 告诉grunt当我们在终端中输入grunt时需要做些什么
-  grunt.registerTask('default', ['cssmin', 'htmlmin']);
+  grunt.registerTask('default', ['cssmin', 'htmlmin', 'imagemin']);
 
 };
