@@ -1,0 +1,101 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+body, html{
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	word-break: break-word;
+	text-align: left;
+	font-family: "微软雅黑","ms song","宋体","Arial","verdana","Helvetica", "sans-serif";
+}
+
+.div{
+	display: block;
+}
+
+.head{
+	margin:0, 0, 0, 0;
+	width: 100%;
+	height: 200px;
+	text-align: left;
+	background: #111111;
+	clear:both;
+}
+
+.title{
+	padding-top: 25px;
+	padding-left: 1.5em;
+	font-family: "微软雅黑","ms song","宋体","Arial","verdana","Helvetica", "sans-serif";
+	color: white;
+	font-size: 64px;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+.navigation{
+	width: 30%;
+	float: left;
+	text-align: left;
+	overflow: hidden;
+}
+
+.infromation{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.cantact_way{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.web_show{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.portrait img{
+	width:100%;
+	height: 100%;
+	text-align: center;
+}
+
+.content{
+	width: 70%;
+	float: left;
+	overflow: hidden;
+}
+
+.copyright{
+	text-align: center;
+    color: black;
+    font-family: "微软雅黑","ms song","宋体","Arial","verdana","Helvetica", "sans-serif";
+    font-size: 20px;
+    min-height: 15px;
+    height: 30px;
+    margin-top: 10px;
+    padding-top: 30px;
+	width: 100%;
+}
+
+.subtitle{
+	font-weight: bold;
+    line-height: 1.2em;
+    font-size: 25px;
+    font-family: "黑体","ms song","宋体","Arial","verdana","Helvetica", "sans-serif";
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    background: url(images/title_cata.gif) 0 50% no-repeat;
+    color: #AA7A53;
+    padding: 8px 0px 0px 32px;
+}
+
+.nav_title{
+    font-family: "黑体","ms song","宋体","Arial","verdana","Helvetica", "sans-serif";
+}
