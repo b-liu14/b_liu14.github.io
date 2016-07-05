@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="backToTop.css">
+    <style>
+	    body{
+		    height: 2000px;
+			background-image:-webkit-linear-gradient(315deg, white, black);
+			background-image:linear-gradient(315deg,white,black);
+		}
+    </style>
+  </head>
+
+  <body>
+    <!-- my change -->
+  	<script type="text/javascript" src="backToTop.js"></script>
+    <script>
+    var pos = [{x:100, y:100}, {LeftBottom: true}, {RightBottom: true}, {RightTop: true}, {LeftTop: true}];
+	backToTopInit(pos[Math.floor(Math.random() * 4)]);
+    </script>
+  </body>
+</html>
+
