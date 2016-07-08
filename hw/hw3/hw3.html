@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="myalert.js"></script>
+    <style>
+      body{
+        height: 2000px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <form>
+        content:    <input type="text" id = "content" value="myalert test"><br>
+        close key:  <input type="text" id = "clossKey" value = "27"><br>
+        draggable:
+        <form>
+          <input type="radio" name="draggable" value="true" checked="true" /> true
+          <input type="radio" name="draggable" value="false" /> false
+        </form><br>
+        <input type="button" value="fire myalert" onclick="fireMyAlert()"/>
+    </form>
+    <script>
+        function fireMyAlert(){
+            arg = {
+                content: document.getElementById("content").value,
+                closeKey: (function(){
+                    value = document.getElementById("clossKey").value;
+                    if(value === ""){
+                        return undefined;
+                    }
+                    else{
+                        return parseInt(value);
+                    }
+                })(),
+                draggable: (function(){
+                    f = document.getElementsByName("draggable");
+                    for (i = 0; i < 2; i++) {
+                        if (f[i].checked == true){
+                         return (f[i].value === "true");
+                        }
+                    }
+                })()
+            }
+            myalert(arg);
+        }
+        // myalert({content:"test", draggable:false, closeKey: 84});
+    </script>
+  </body>
+</html>
+
